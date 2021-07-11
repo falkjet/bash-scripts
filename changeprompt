@@ -1,0 +1,5 @@
+#!/bin/bash
+cd ~/.bashrc.d
+
+
+ln -sf prompt/"$(ls prompt | fzf)" prompt.sh

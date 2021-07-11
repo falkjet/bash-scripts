@@ -1,0 +1,13 @@
+cd ~/programming
+
+while true; do
+    dirs=$(ls)
+    dir=$((echo .; echo "$dirs") | rofi -dmenu)
+    if [[ "$dir" == . ]]; then
+        exec code .
+    elif [[ -z "$dir" ]]; then
+        exit
+    else
+        cd "$dir"
+    fi
+done

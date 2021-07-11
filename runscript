@@ -1,0 +1,8 @@
+if [ -z "$PS1" ]; then
+    one_of=fzf
+else
+    one_of=dmenu
+fi
+
+script=$(ls ~/Scripts/ | $one_of)
+exec "~/Scripts/$script"
