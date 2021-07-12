@@ -1,3 +1,5 @@
+#!/bind/bash
+
 cd ~/programming
 
 while true; do

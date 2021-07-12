@@ -1,3 +1,5 @@
+#!/bin/bash
+
 packages=""
 
 for package in $(pacman -Qme | fzf -m | awk '{print $1}')
